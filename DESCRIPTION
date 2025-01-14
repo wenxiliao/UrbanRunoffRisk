@@ -1,5 +1,5 @@
 Package: UrbanRunoffRisk
-Title: Assessment of environmental hazard and risk of mixtures 
+Title: Assessment of hazard and risk of urban runoff 
 Version: 1.0
 Authors@R: 
     person("Wenxi", "Liao", , "wenxi.liao@mail.mcgill.ca", role = c("aut", "cre"))

@@ -10,7 +10,7 @@
 <!-- badges: end -->
 
 This package provides functions to calculate hazard and
-risk of urban runoff mixtures using input from Excel files.
+risk of urban runoff using input from Excel files.
 
 ## Installation
 
