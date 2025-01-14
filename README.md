@@ -25,25 +25,31 @@ install.packages("devtools")
 devtools::install_github("wenxiliao/UrbanRunoffRisk")
 ```
 
-## Example
+## Example Usage
 
 This is a basic example which shows you how to solve a common problem:
 
+### Prerequisites
+Ensure you have the required packages installed:
+```R
+# Install required packages
+install.packages("readxl")
+```
+
 ``` r
 library(UrbanRunoffRisk)
-
-## basic example code
+library(readxl)
 
 # Read the Excel file
-runoff_metals = read_excel()
+runoff_metals = read_excel(data/UrbanRunoff_Metals.xlsx)
 
 # Inspect the first few rows
 head(runoff_metals)
 
-# Calculate RQ(PEC/PNEC)
+# Calculate Risk Quotient (PEC/PNEC)
 calculate_RQ_PEC_PNEC()
 
-# Calculate RQ(STU)
+# Calculate Risk Quotient (STU)
 calculate_RQ_STU()
 
 ```
