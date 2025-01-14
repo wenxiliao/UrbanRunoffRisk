@@ -76,6 +76,7 @@ Intermediate Calculations:
 Final Result:
 - Total RQ (Sum of all contaminants): 22067.69 
 ============================================
+
 [1] 22067.69
 
 
@@ -111,10 +112,18 @@ Condition Met: RQ_STU > 1. Applying Equation 5.
 Final Result:
 - EC50IA / EC50CA ≤ 1.967592 
 =========================================
+
 [1] 1.967592
 
 
 #### Note
 Equations 4 and 5 are the equations noted in Fulgence et al. (in preparation).
+
+
+## Citation
+Fulgence M., Kalogerakis G., Quevedo A., Liao W., Hamilton B., Robinson S., & Tufenkji N. Urban runoff toxicity 
+on aquatic species: physiological and biomarker responses with toxicant characterization. (in preparation).
+
+
 
 
