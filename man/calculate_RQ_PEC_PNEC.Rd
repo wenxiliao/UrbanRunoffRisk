@@ -5,11 +5,9 @@
 \title{Calculate RQ_PEC/PNEC
 Calculate Ecotoxicity Risk Quotient (RQ)}
 \usage{
-calculate_RQ_PEC_PNEC(input_file = NULL, AF = 1000, sheet = 1, verbose = TRUE)
+calculate_RQ_PEC_PNEC(input_file = NULL, sheet = 1, verbose = TRUE)
 }
 \arguments{
-\item{AF}{A vector of Assessment Factors for each contaminant (default = 1 for all).}
-
 \item{verbose}{Logical, if TRUE, prints detailed output (default = TRUE).}
 
 \item{PEC}{A vector of Predicted Environmental Concentrations (e.g., µg/L or mg/L).}
@@ -19,6 +17,8 @@ calculate_RQ_PEC_PNEC(input_file = NULL, AF = 1000, sheet = 1, verbose = TRUE)
 \item{EC50_daphnids}{A vector of EC50 values for Daphnia sp. (e.g., mg/L).}
 
 \item{EC50_fish}{A vector of EC50 values for fish (e.g., mg/L).}
+
+\item{AF}{A vector of Assessment Factors for each contaminant (default = 1 for all).}
 }
 \value{
 The Risk Quotient (RQ) as a numeric value.
@@ -27,10 +27,4 @@ The Risk Quotient (RQ) as a numeric value.
 This function calculates the Risk Quotient (RQ) for contaminants based on their
 Predicted Environmental Concentration (PEC), EC50 values for multiple species,
 and an Assessment Factor (AF).
-}
-\examples{
-# Example with an Excel file
-# RQ <- calculate_RQ_PEC_PNEC(input_file = "path/to/your/file.xlsx", AF = 1000)
-
-#' @export
 }

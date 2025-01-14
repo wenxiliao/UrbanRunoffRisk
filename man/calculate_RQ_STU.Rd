@@ -2,7 +2,7 @@
 % Please edit documentation in R/calculate_RQ_STU.R
 \name{calculate_RQ_STU}
 \alias{calculate_RQ_STU}
-\title{Calculate RQ_STU with Conditional Equation 3 Refinement}
+\title{Calculate RQ_STU with Conditional Equation 5 Refinement}
 \usage{
 calculate_RQ_STU(input_file = NULL, AF = 1000, sheet = 1, verbose = TRUE)
 }
@@ -23,10 +23,5 @@ calculate_RQ_STU(input_file = NULL, AF = 1000, sheet = 1, verbose = TRUE)
 The final Risk Quotient (RQ_STU) value after applying conditions.
 }
 \description{
-This function calculates RQ_STU using Equation 2 and applies Equation 3 only if RQ_STU > 1.
-}
-\examples{
-# Example with an Excel file
-# RQ <- calculate_RQ_STU(input_file = "path/to/your/file.xlsx", AF = 1000)
-
+This function calculates RQ_STU using Equation 4 and applies Equation 5 only if RQ_STU > 1.
 }

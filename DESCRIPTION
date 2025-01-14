@@ -1,16 +1,15 @@
 Package: UrbanRunoffRisk
 Title: An R package to assess hazard and risk of urban runoff.
-Version: 1.0
-Author: Wenxi Liao
-Maintainer: Wenxi Liao <wenxi.liao@mail.mcgill.ca>
-Description: This R package provides two functions to calculate risk of urban runoff with chemical mixtures 
-using input from an Excel file.
+Version: 1.0.0
+Authors@R: 
+    person("Wenxi", "Liao", email = "wenxi.liao@mcgill.ca", role = c("aut", "cre"))
+Description: This R package provides two functions to calculate the risk of urban 
+    runoff with chemical mixtures using input from an Excel file.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
     readxl
-
-Depends:
+Depends: 
     R (>= 4.4)
