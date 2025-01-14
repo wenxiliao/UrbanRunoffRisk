@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+## README
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -7,12 +7,13 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package provides functions to calculate environmental hazard and
-risk of mixtures using input from Excel files or interactive data input.
+This package provides functions to calculate hazard and
+risk of urban runoff mixtures using input from Excel files.
 
 ## Installation
 
-You can install the development version of UrbanRunoffRisk like so:
+You can install the development version of UrbanRunoffRisk following the 
+steps below:
 
 ``` r
 # Install devtools if not already installed
