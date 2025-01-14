@@ -4,13 +4,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# UrbanRunoffRisk
+## UrbanRunoffRisk
 
 <!-- badges: start -->
 <!-- badges: end -->
 
 This package provides functions to calculate hazard and
-risk of urban runoff using input from Excel files.
+risk of urban runoff with chemical mixtures using input from Excel files.
 
 ## Installation
 
@@ -31,11 +31,22 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(UrbanRunoffRisk)
-## basic example code
-```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+## basic example code
+
+# Read the Excel file
+runoff_metals = read_excel()
+
+# Inspect the first few rows
+head(runoff_metals)
+
+# Calculate RQ(PEC/PNEC)
+calculate_RQ_PEC_PNEC()
+
+# Calculate RQ(STU)
+calculate_RQ_STU()
+
+```
 
 ``` r
 summary(cars)
@@ -57,7 +68,4 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
-=======
-# UrbanRunoffRisk
-This package provides functions to calculate environmental hazard and risk of urban runoff using input from an Excel file
->>>>>>> c789fa75fd518c6ea25de8384a0a1b7ce11d8a96
+
