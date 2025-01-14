@@ -30,48 +30,91 @@ devtools::install_github("wenxiliao/UrbanRunoffRisk")
 This is a basic example which shows you how to solve a common problem:
 
 ### Prerequisites
-Ensure you have the required packages installed:
+Ensure you have the required packages installed and loaded:
 ```R
 # Install required packages
 install.packages("readxl")
-```
 
-``` r
 library(UrbanRunoffRisk)
 library(readxl)
+```
 
+### Read the example data file
+``` r
 # Read the Excel file
-runoff_metals = read_excel(data/UrbanRunoff_Metals.xlsx)
+runoff_metals = read_excel("data/UrbanRunoff_Metals.xlsx"")
 
 # Inspect the first few rows
 head(runoff_metals)
-
-# Calculate Risk Quotient (PEC/PNEC)
-calculate_RQ_PEC_PNEC()
-
-# Calculate Risk Quotient (STU)
-calculate_RQ_STU()
-
 ```
 
+### Calculate Risk Quotient (PEC/PNEC)
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+# Calculate RQ(PEC/PNEC)
+RQ_PEC_PNEC = calculate_RQ_PEC_PNEC(runoff_metals)
+
+# View the results
+print(RQ_PEC_PNEC)
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
 
-You can also embed plots, for example:
+### Example output for Risk Quotient (PEC/PNEC) of runoff_metals data
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+=== Ecotoxicity Risk Quotient Calculation ===                                                                                                              
+Input Data:
+- PEC (Environmental Concentrations): 0.5 155 35 43 592 
+- EC50 (Algae): 301 19 150 476 2700 
+- EC50 (Daphnids): 65 9.8 510 694.57 100 
+- EC50 (Fish): 10850 300 18990 26850 25880 
+- Assessment Factors (AF): 1000 1000 1000 1000 1000 
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+Intermediate Calculations:
+- Minimum EC50 values: 65 9.8 150 476 100 
+- PNEC values: 0.065 0.0098 0.15 0.476 0.1 
+- Individual RQ values: 7.692308 15816.33 233.3333 90.33613 5920 
+
+Final Result:
+- Total RQ (Sum of all contaminants): 22067.69 
+============================================
+[1] 22067.69
+
+
+### Calculate Risk Quotient (STU)
+``` r
+# Calculate RQ(STU)
+RQ_STU = calculate_RQ_STU(runoff_metals)
+
+# View the results
+print(RQ_STU)
+```
+
+### Example output for Risk Quotient (STU) of runoff_metals data
+
+=== Risk Quotient (RQ_STU) Calculation ===                                                                                                                 
+Input Data:
+- PEC (Environmental Concentrations): 0.5 155 35 43 592 
+- EC50 (Algae): 301 19 150 476 2700 
+- EC50 (Daphnia): 65 9.8 510 694.57 100 
+- EC50 (Fish): 10850 300 18990 26850 25880 
+- Assessment Factor (AF): 1000 
+
+Intermediate Calculations:
+- STU (Algae): 8.702485 
+- STU (Daphnia): 21.87456 
+- STU (Fish): 0.5430321 
+- Maximum STU (Equation 4): 21.87456 
+
+Condition Met: RQ_STU > 1. Applying Equation 5.
+- Total Ratio (Σ PEC/EC50): 31.12007 
+- Maximum Ratio (max PEC/EC50): 15.81633 
+
+Final Result:
+- EC50IA / EC50CA ≤ 1.967592 
+=========================================
+[1] 1.967592
+
+
+#### Note
+Equations 4 and 5 are the equations noted in Fulgence et al. (in preparation).
+
 
