@@ -1,0 +1,11 @@
+Package: UrbanRunoffRisk
+Title: Assessment of environmental hazard and risk of mixtures 
+Version: 1.0
+Authors@R: 
+    person("Wenxi", "Liao", , "wenxi.liao@mail.mcgill.ca", role = c("aut", "cre"))
+Description: This package provides functions to calculate environmental hazard and risk of urban runoff using input from an Excel file
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+
