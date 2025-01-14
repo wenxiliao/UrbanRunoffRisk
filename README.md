@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -53,3 +54,7 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
+=======
+# UrbanRunoffRisk
+This package provides functions to calculate environmental hazard and risk of urban runoff using input from an Excel file
+>>>>>>> c789fa75fd518c6ea25de8384a0a1b7ce11d8a96
