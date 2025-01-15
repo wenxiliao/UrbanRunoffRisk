@@ -1,25 +1,22 @@
 #' Calculate RQ_PEC/PNEC
-
-
-# Customized Ecotoxicity Risk Assessment Function
-
-#' Calculate Ecotoxicity Risk Quotient (RQ)
+#'
+#' This function calculates Ecotoxicity Risk Quotient (RQ) PEC/PNEC
 #'
 #' This function calculates the Risk Quotient (RQ) for contaminants based on their
-#' Predicted Environmental Concentration (PEC), EC50 values for multiple species,
+#' Predicted Environmental Concentration (PEC), EC50 (or LC50) values for multiple species,
 #' and an Assessment Factor (AF).
 #'
 #' @param PEC A vector of Predicted Environmental Concentrations (e.g., µg/L or mg/L).
-#' @param EC50_algae A vector of EC50 values for algae (e.g., mg/L).
-#' @param EC50_daphnids A vector of EC50 values for Daphnia sp. (e.g., mg/L).
-#' @param EC50_fish A vector of EC50 values for fish (e.g., mg/L).
-#' @param AF A vector of Assessment Factors for each contaminant (default = 1 for all).
+#' @param EC50_algae A vector of EC50 values for algae (e.g., µg/L or mg/L).
+#' @param EC50_daphnids A vector of EC50 values for Daphnia sp. (e.g.,µg/L or mg/L).
+#' @param EC50_fish A vector of EC50 values for fish (e.g., µg/L or mg/L).
+#' @param AF A vector of Assessment Factors for each contaminant (e.g., AF = 1000).
 #' @param verbose Logical, if TRUE, prints detailed output (default = TRUE).
 #' @return The Risk Quotient (RQ) as a numeric value.
 #' @export
 calculate_RQ_PEC_PNEC <- function(input_file = NULL, sheet = 1, verbose = TRUE) {
   if (!is.null(input_file)) {
-    # Load data from Excel file
+    # Load data from the Excel file
     data <- readxl::read_excel(input_file, sheet = sheet)
     PEC <- as.numeric(data$PEC)
     EC50_algae <- as.numeric(data$EC50_algae)

@@ -1,18 +1,19 @@
 #' Calculate RQ_STU with Conditional Equation 5 Refinement
 #'
-#' This function calculates RQ_STU using Equation 4 and applies Equation 5 only if RQ_STU > 1.
+#' This function calculates Risk Quotient (RQ) Sum of Toxic Units (STU) using Equation 4 and applies Equation 5 only if RQ_STU > 1.
+#' The equations 4 and 5 are noted in the paper Fulgence et al. (in preparation)
 #'
 #' @param PEC A vector of Predicted Environmental Concentrations (PECi) (e.g., µg/L or mg/L).
-#' @param EC50_algae A vector of EC50 values for algae (e.g., mg/L).
-#' @param EC50_daphnids A vector of EC50 values for Daphnia sp. (e.g., mg/L).
-#' @param EC50_fish A vector of EC50 values for fish (e.g., mg/L).
-#' @param AF Assessment Factor (default = 1).
+#' @param EC50_algae A vector of EC50 values for algae (e.g., µg/L or mg/L).
+#' @param EC50_daphnids A vector of EC50 values for Daphnia sp. (e.g., µg/L or mg/L).
+#' @param EC50_fish A vector of EC50 values for fish (e.g., µg/L or mg/L).
+#' @param AF Assessment Factor (default = 1000).
 #' @param verbose Logical, if TRUE, prints detailed output (default = TRUE).
 #' @return The final Risk Quotient (RQ_STU) value after applying conditions.
 #' @export
 calculate_RQ_STU <- function(input_file = NULL, AF = 1000, sheet = 1, verbose = TRUE) {
   if (!is.null(input_file)) {
-    # Load data from Excel file
+    # Load data from the Excel file
     data <- readxl::read_excel(input_file, sheet = sheet)
     PEC <- as.numeric(data$PEC)
     EC50_algae <- as.numeric(data$EC50_algae)
