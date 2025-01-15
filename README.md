@@ -42,7 +42,7 @@ library(readxl)
 ### Read the example data file
 ``` r
 # Read the Excel file
-runoff_metals = read_excel("data/UrbanRunoff_Metals.xlsx"")
+runoff_metals = read_excel("data/UrbanRunoff_Metals.xlsx")
 
 # Inspect the first few rows
 head(runoff_metals)
