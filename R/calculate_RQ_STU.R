@@ -55,8 +55,8 @@ calculate_RQ_STU <- function(input_file = NULL, AF = 1000, sheet = 1, verbose = 
   STU_fish <- sum(PEC / EC50_fish, na.rm = TRUE)
 
   # Step 2: Calculate RQ_STU using Equation 4
-  max_STU <- max(STU_algae, STU_daphnids, STU_fish)
-  RQ_STU <- max_STU * AF
+  max_STU <- max(STU_algae, STU_daphnids, STU_fish) * AF
+  RQ_STU <- max_STU
 
   # Step 3: Apply Equation 5 if RQ_STU > 1
   if (RQ_STU > 1) {
@@ -89,7 +89,8 @@ calculate_RQ_STU <- function(input_file = NULL, AF = 1000, sheet = 1, verbose = 
     cat("- STU (Algae):", STU_algae, "\n")
     cat("- STU (Daphnia):", STU_daphnids, "\n")
     cat("- STU (Fish):", STU_fish, "\n")
-    cat("- Maximum STU (Equation 4):", max_STU, "\n")
+    cat("- RQ_STU (Equation 4):", max_STU, "\n")
+
     if (RQ_STU > 1) {
       cat("\nCondition Met: RQ_STU > 1. Applying Equation 5.\n")
       cat("- Total Ratio (Σ PEC/EC50):", total_ratio, "\n")
