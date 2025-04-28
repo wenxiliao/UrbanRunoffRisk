@@ -74,7 +74,8 @@ Intermediate Calculations:
 - Individual RQ values: 7.692308 15816.33 233.3333 90.33613 5920 
 
 Final Result:
-- Total RQ (Sum of all contaminants): 22067.69 
+- Total RQ (Sum of all contaminants): 22067.69
+
 ============================================
 
 [1] 22067.69
@@ -111,7 +112,9 @@ Condition Met: RQ_STU > 1. Applying Equation 5.
 
 Final Result:
 - EC50IA / EC50CA ≤ 1.967592 
+
 =========================================
+
 [1] 1.967592
 
 
