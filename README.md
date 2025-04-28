@@ -91,7 +91,7 @@ print(RQ_STU)
 
 ### Example output for Risk Quotient (STU) of runoff_metals data
 
-=== Risk Quotient (RQ_STU) Calculation ===                                                                                                                 
+=== Risk Quotient (RQ_STU) Calculation ===                                                                                                                     
 Input Data:
 - PEC (Environmental Concentrations): 0.5 155 35 43 592 
 - EC50 (Algae): 301 19 150 476 2700 
@@ -103,7 +103,7 @@ Intermediate Calculations:
 - STU (Algae): 8.702485 
 - STU (Daphnia): 21.87456 
 - STU (Fish): 0.5430321 
-- Maximum STU (Equation 4): 21.87456 
+- RQ_STU (Equation 4): 21874.56 
 
 Condition Met: RQ_STU > 1. Applying Equation 5.
 - Total Ratio (Σ PEC/EC50): 31.12007 
@@ -112,7 +112,6 @@ Condition Met: RQ_STU > 1. Applying Equation 5.
 Final Result:
 - EC50IA / EC50CA ≤ 1.967592 
 =========================================
-
 [1] 1.967592
 
 
