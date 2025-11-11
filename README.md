@@ -151,7 +151,7 @@ print(RQ_PEC_PNEC)
 ```
 
 
-### Example output for Risk Quotient (PEC/PNEC) of runoff_organic_contaminants_path data
+### Example output for Risk Quotient (PEC/PNEC) of runoff_organic_contaminants data
 
 Warning: The data contains NA values. These will be ignored in calculations.
 
@@ -196,7 +196,7 @@ print(RQ_STU)
 ```
 
 
-### Example output for Risk Quotient (STU) of runoff_organic_contaminants_path data
+### Example output for Risk Quotient (STU) of runoff_organic_contaminants data
 
 Warning: The data contains NA values. These will be ignored in calculations.
 
@@ -237,7 +237,7 @@ Warning messages:
 
 
 
-#### Note
+## Note
 Equations 4 and 5 are the equations noted in Fulgence et al. (in preparation).
 
 
