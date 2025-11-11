@@ -64,7 +64,8 @@ print(RQ_PEC_PNEC)
 
 ### Example output for Risk Quotient (PEC/PNEC) of runoff_metals data
 
-=== Ecotoxicity Risk Quotient Calculation ===                                                                                                              
+=== Ecotoxicity Risk Quotient Calculation ===  
+
 Input Data:
 - PEC (Environmental Concentrations): 0.5 155 35 43 592 
 - EC50 (Algae): 301 19 150 476 2700 
@@ -96,7 +97,8 @@ print(RQ_STU)
 
 ### Example output for Risk Quotient (STU) of runoff_metals data
 
-=== Risk Quotient (RQ_STU) Calculation ===                                                                                                                     
+=== Risk Quotient (RQ_STU) Calculation ===     
+
 Input Data:
 - PEC (Environmental Concentrations): 0.5 155 35 43 592 
 - EC50 (Algae): 301 19 150 476 2700 
@@ -152,7 +154,9 @@ print(RQ_PEC_PNEC)
 ### Example output for Risk Quotient (PEC/PNEC) of runoff_organic_contaminants_path data
 
 Warning: The data contains NA values. These will be ignored in calculations.
+
 === Ecotoxicity Risk Quotient Calculation ===
+
 Input Data:
 - PEC (Environmental Concentrations): 0.0092 0.0074 0.0072 0.0048 0.013 0.475 0.151 0.027 0.013 1.398 0 0 0 0.171 0.076 0.077 0.322 0.113 0.068 0.993 0 0.122 0 0.729 0.086 0 0.037 0 0.503 0.132 
 - EC50 (Algae): 413.2 NA NA 4.3 NA 3880 14 630 52 NA 8 2173.8 930 192 237 49735.97 45000 51000 39000 NA 500 NA NA NA 2980 NA NA NA NA NA 
@@ -167,6 +171,7 @@ Intermediate Calculations:
 
 Final Result:
 - Total RQ (Sum of all contaminants): 55.98821 
+
 ============================================
 Warning messages:
 1: In calculate_RQ_PEC_PNEC(runoff_organic_contaminants_path) :
@@ -194,7 +199,9 @@ print(RQ_STU)
 ### Example output for Risk Quotient (STU) of runoff_organic_contaminants_path data
 
 Warning: The data contains NA values. These will be ignored in calculations.
+
 === Risk Quotient (RQ_STU) Calculation ===
+
 Input Data:
 - PEC (Environmental Concentrations): 0.0092 0.0074 0.0072 0.0048 0.013 0.475 0.151 0.027 0.013 1.398 0 0 0 0.171 0.076 0.077 0.322 0.113 0.068 0.993 0 0.122 0 0.729 0.086 0 0.037 0 0.503 0.132 
 - EC50 (Algae): 413.2 NA NA 4.3 NA 3880 14 630 52 NA 8 2173.8 930 192 237 49735.97 45000 51000 39000 NA 500 NA NA NA 2980 NA NA NA NA NA 
@@ -214,6 +221,7 @@ Condition Met: RQ_STU > 1. Applying Equation 5.
 
 Final Result:
 - EC50IA / EC50CA ≤ 2.930098 
+
 =========================================
 Warning messages:
 1: In calculate_RQ_STU(runoff_organic_contaminants_path) :
