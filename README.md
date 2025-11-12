@@ -173,6 +173,7 @@ Final Result:
 - Total RQ (Sum of all contaminants): 55.98821 
 
 ============================================
+
 Warning messages:
 1: In calculate_RQ_PEC_PNEC(runoff_organic_contaminants_path) :
   NAs introduced by coercion
@@ -223,6 +224,7 @@ Final Result:
 - EC50IA / EC50CA ≤ 2.930098 
 
 =========================================
+
 Warning messages:
 1: In calculate_RQ_STU(runoff_organic_contaminants_path) :
   NAs introduced by coercion
