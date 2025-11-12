@@ -127,7 +127,7 @@ Final Result:
 
 
 ## Example 2: 
-This is another example using organic contaminants to demonstrate how to address a common analysis problem. The data in the example were collected from the article below: xxx
+This is another example using organic contaminants to demonstrate how to address a common analysis problem. The data in the example were collected from the article below: Burant, A., Selbig, W., Furlong, E. T., & Higgins, C. P. (2018). Trace organic contaminants in urban runoff: Associations with urban land-use. Environmental pollution, 242, 2068-2077.
 
 ### Read the example data file
 ``` r
