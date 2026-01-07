@@ -245,7 +245,7 @@ Equations 4 and 5 are the equations noted in Macha et al. (2026).
 
 ## Citation
 Macha, F. J., Kalogerakis, G., Quevedo, A. C., Liao, W., Hamilton, B. M., Robinson, S. A., Tufenkji, N. (2026). Urban Runoff Toxicity to Aquatic Species: 
-Physiological and Biomarker Responses with Toxicant Characterization. Environmental Science & Technology.
+Physiological and Biomarker Responses with Toxicant Characterization. Environmental Science & Technology. https://doi.org/10.1021/acs.est.5c07634
 
 
 
