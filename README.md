@@ -240,12 +240,12 @@ Warning messages:
 
 
 ## Note
-Equations 4 and 5 are the equations noted in Fulgence et al. (in preparation).
+Equations 4 and 5 are the equations noted in Macha et al. (2026).
 
 
 ## Citation
-Fulgence M., Kalogerakis G., Quevedo A., Liao W., Hamilton B., Robinson S., & Tufenkji N. Urban runoff toxicity 
-on aquatic species: physiological and biomarker responses with toxicant characterization. (in preparation).
+Macha, F. J., Kalogerakis, G., Quevedo, A. C., Liao, W., Hamilton, B. M., Robinson, S. A., Tufenkji, N. (2026). Urban Runoff Toxicity to Aquatic Species: 
+Physiological and Biomarker Responses with Toxicant Characterization. Environmental Science & Technology.
 
 
 
